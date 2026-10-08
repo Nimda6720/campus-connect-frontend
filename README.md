@@ -18,6 +18,8 @@ A student meetup platform built for RUET — drop the messy group chats. Find st
 ## 📸 Preview
 
 > A Spotify-inspired dark-themed web app for campus social life.
+<img width="2551" height="1414" alt="image" src="https://github.com/user-attachments/assets/af5e77c7-e13f-4298-a677-abec322b913f" />
+
 
 _Landing page showcasing upcoming events → Log in → Browse & filter meetups → Join or create your own → Chat inside events._
 
