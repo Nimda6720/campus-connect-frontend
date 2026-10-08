@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🎓 Campus Connect
 
-## Available Scripts
+**Your Campus. Your People. Your Plans.**
 
-In the project directory, you can run:
+A student meetup platform built for RUET — drop the messy group chats. Find study groups, gaming squads, and campus events all in one place.
 
-### `npm start`
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-campus--connect-1db954?style=for-the-badge)](https://campus-connect-frontend-delta.vercel.app)
+[![Backend Repo](https://img.shields.io/badge/⚙️%20Backend-campus--connect--backend-333?style=for-the-badge&logo=github)](https://github.com/Nimda6720/campus-connect-backend)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev/)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000?style=flat-square&logo=vercel)](https://vercel.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📸 Preview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> A Spotify-inspired dark-themed web app for campus social life.
 
-### `npm run build`
+_Landing page showcasing upcoming events → Log in → Browse & filter meetups → Join or create your own → Chat inside events._
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Feature | Description |
+|---------|-------------|
+| 🔐 **Authentication** | Register & log in with email/password, session persisted in localStorage |
+| 📅 **Create Meetups** | Post events with title, category, location, time, description, tags & a cover image |
+| 🏷️ **Categories** | Study · Gaming · Sports · Food — each with its own color badge |
+| 🔍 **Search & Filter** | Find meetups instantly by name or category |
+| 🤝 **Join Events** | RSVP to any meetup with a single click, see attendee counts |
+| 💬 **In-Event Chat** | Live chat thread embedded in each meetup card |
+| 🗑️ **Manage Your Events** | Creators can delete their own events |
+| 🌙 **Dark Theme UI** | Spotify-inspired dark interface with green accent (`#1db954`) |
+| 📱 **Public Landing Page** | Non-logged-in users see upcoming events as a preview |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Layer | Technology |
+|-------|-----------|
+| Framework | React 19 |
+| HTTP Client | Axios |
+| Styling | Inline CSS (dark theme, no external CSS library) |
+| State Management | React Hooks (`useState`, `useEffect`) |
+| Auth Storage | `localStorage` |
+| Deployment | Vercel |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
+- Node.js ≥ 18
+- npm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Clone & Install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/Nimda6720/campus-connect-frontend.git
+cd campus-connect-frontend
+npm install
+```
 
-### Code Splitting
+### 2. Run the Dev Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+Opens at [http://localhost:3000](http://localhost:3000) — hot-reloads on save.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> **Note:** The app connects to the deployed backend at `https://campus-connect-backend-l3et.onrender.com`. No local backend setup needed.
 
-### Making a Progressive Web App
+### 3. Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm run build
+```
 
-### Advanced Configuration
+Outputs an optimized bundle to the `build/` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+campus-connect-frontend/
+├── public/
+│   └── index.html            # HTML shell
+└── src/
+    ├── App.js                # 🧠 Core app — all views, state & API calls
+    ├── App.css               # Global styles
+    ├── index.js              # React entry point
+    └── reportWebVitals.js
+```
 
-### `npm run build` fails to minify
+> All application logic lives in `App.js` — views (landing, auth, dashboard), API calls, state management, and UI rendering are co-located for simplicity.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🌐 API
+
+The frontend communicates with the [Campus Connect Backend](https://github.com/Nimda6720/campus-connect-backend) over REST:
+
+| Action | Endpoint |
+|--------|----------|
+| Register | `POST /api/register` |
+| Login | `POST /api/login` |
+| Get all meetups | `GET /api/meetups` |
+| Create meetup | `POST /api/meetups` |
+| Join meetup | `PUT /api/meetups/:id/join` |
+| Delete meetup | `DELETE /api/meetups/:id` |
+| Send chat message | `POST /api/meetups/:id/chat` |
+
+---
+
+## 🔗 Related
+
+- **Backend**: [campus-connect-backend](https://github.com/Nimda6720/campus-connect-backend) — Express + MongoDB + Multer
+- **Live App**: [campus-connect-frontend-delta.vercel.app](https://campus-connect-frontend-delta.vercel.app)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
